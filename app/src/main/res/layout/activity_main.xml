@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#dddddd"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在中间"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_centerInParent="true" />
+
+    <TextView
+            android:id="@+id/center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在水平中间"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+            android:id="@+id/center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在垂直中间"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_centerVertical="true" />
+
+    <TextView
+            android:id="@+id/parent_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我跟上级左边对齐"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_alignParentLeft="true" />
+
+    <TextView
+            android:id="@+id/parent_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我跟上级右边对齐"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_alignParentRight="true" />
+
+    <TextView
+            android:id="@+id/parent_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我跟上级顶部对齐"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_alignParentTop="true" />
+
+    <TextView
+            android:id="@+id/parent_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我跟下级底部对齐"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_alignParentBottom="true" />
+
+    <TextView
+            android:id="@+id/left_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在中间左边"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_toLeftOf="@id/center"
+            android:layout_alignTop="@id/center" />
+
+    <TextView
+            android:id="@+id/right_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在中间右边"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_toRightOf="@id/center"
+            android:layout_alignTop="@id/center" />
+
+    <TextView
+            android:id="@+id/top_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在中间上面"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_above="@id/center"
+            android:layout_alignLeft="@id/center" />
+
+    <TextView
+            android:id="@+id/bottom_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="我在中间下面"
+            android:textSize="16sp"
+            android:textColor="@color/purple_200"
+            android:layout_below="@id/center"
+            android:layout_alignRight="@id/center" />
+
+
+</RelativeLayout>
